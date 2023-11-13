@@ -1,0 +1,32 @@
+/*--------general--------*/
+:root {
+    --col-main-blue: #01a6e8;
+    --col-main-blue-hover: #0980af;
+    --col-main-dark-blue: #054c68;
+    --col-main-orange: #ffac14;
+    --col-main-orange-hover: #ec9800;
+    --col-main-orange-hover: #9d6600;
+    --col-white: #edeaea;
+    --col-black: #111111;
+    --col-light-grey: #d3d3d3;
+    --col-light-theme-main: #f4f4f6;
+    --col-light-theme-alt: #f3f3f7;
+}
+
+.container {
+    width: min(100% - 40px, 1280px);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------end of general--------*/
