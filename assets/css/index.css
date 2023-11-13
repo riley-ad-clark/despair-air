@@ -49,7 +49,7 @@
 
 .dispair-air-logo {
     margin-top: 5px;
-    background-image: url(/dispair-air/assets/img/logo.png);
+    background-image: url(../img/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 75px;
