@@ -1,7 +1,7 @@
 /*--------general--------*/
 :root {
     --col-main-blue: #01a6e8;
-    --col-main-blue-hover: #0980af;
+    --col-main-blue-hover: #0993ca;
     --col-main-dark-blue: #054c68;
     --col-main-orange: #ffac14;
     --col-main-orange-hover: #ec9800;
@@ -9,6 +9,152 @@
     --col-white: #edeaea;
     --col-black: #111111;
     --col-light-grey: #d3d3d3;
+    --col-dark-grey: #aaa9a9;
     --col-light-theme-main: #f4f4f6;
     --col-light-theme-alt: #f3f3f7;
 }
+
+.container {
+    width: min(100% - 40px, 1280px);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+/*--------end of general--------*/
+
+/*--------header--------*/
+
+.container.flex.head {
+    justify-content: space-between;
+}
+
+img.dispair-logo {
+    margin-top: 7px;
+    width: 75px;
+    height: 55px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+header {
+    background-color: var(--col-light-theme-main);
+    min-width: 100%;
+    display: flex;
+    overflow: hidden;
+    box-shadow: rgba(0 0 0 / 0.2) 0px 1px 25px;
+    height: 70px;
+    position: sticky; 
+    top: 0;
+    z-index: 99;
+}
+
+nav.head {
+    color: var(--col-white);
+    font-size: 0px;
+    display: flex;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+nav.head a {
+    text-decoration: none;
+    color: var(--col-white);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+nav.head {
+    width: 100%;
+    text-align: right;
+    justify-content: space-between;
+}
+
+nav.head ul {
+    justify-content: space-between;
+}
+nav.head ul li  {
+    display: inline;
+}
+
+nav.head ul li a {
+    text-transform: capitalize;
+    color: var(--col-black);
+}
+
+nav.head ul li a:hover {
+    text-transform: capitalize;
+    color: #000;
+}
+
+nav.head ul li a.c-button {
+    text-align: center;
+    margin-left: 20px;
+    padding: 8px 20px 8px 20px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 17px;
+    background-color: var(--col-main-blue);
+    color: var(--col-white);
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+
+nav.head ul li a.c-button:hover {
+    background-color: var(--col-main-blue-hover);
+    transition: all 0.3s ease-in-out;
+}
+
+i.fa-bars {
+    color: var(--col-black);
+    font-size: 30px;
+    display: none;
+}
+
+/*--------end of header-------- */
+
+/*--------footer--------*/
+
+.container.flex.foot {
+    justify-content: space-between;
+}
+
+footer {
+    background-color: var(--col-light-theme-main);
+    color: var(--col-white);
+    height: 80px;
+}
+
+nav.foot {
+    line-height: 80px;
+}
+
+nav.foot a i {
+    line-height: 80px;
+    color: var(--col-dark-grey);
+    padding: 0 10px;
+    font-size: 27px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav.foot a i:hover {
+    line-height: 80px;
+    color: var(--col-main-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.copyright {
+    line-height: 80px;
+    color: var(--col-dark-grey);
+    font-size: 14px;
+}
+
+/*--------end of footer--------*/
