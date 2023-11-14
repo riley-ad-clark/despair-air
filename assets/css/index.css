@@ -195,9 +195,81 @@ button.breathe-in:hover {
     animation: fadeIn 0.5s ease-in-out 1.5s forwards;
 }
 
-
-
 /*--------end of hero--------*/
+
+/*--------products--------*/
+
+#products {
+    margin-top: 125px;
+    margin-bottom: 125px;
+    color: var(--col-black);
+}
+
+.product-title {
+    margin-top: 25px;
+}
+
+.product-desc {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 40px;
+    width: 100%;
+    background-color: var(--col-light-theme-alt);
+    padding: 6px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.product-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    margin-top: 25px;
+    width: max(275px);
+    height: max(400px);
+    background-color: var(--col-light-theme);
+    border-radius: 5px;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    box-shadow: rgba(0 0 0 / 0.2) 0px 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.box:hover h3 {
+    color: var(--col-main-blue);
+    transition: color 0.3s ease-in-out;
+}
+
+
+.product-one,
+.product-two,
+.product-three {
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    height: 200px;
+    width: 100%;
+    background-position: center center;
+}
+
+.product-one {
+    background-image: url(../img/despair-air-1-pack.png);
+}
+
+.product-two {
+    background-image: url(../img/despair-air-3-pack.png);
+}
+
+.product-three {
+    background-image: url(../img/despair-air-10-pack.png);
+}
+/*--------end of products--------*/
 
 /*--------footer--------*/
 
