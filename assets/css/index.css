@@ -197,6 +197,110 @@ button.breathe-in:hover {
 
 /*--------end of hero--------*/
 
+/*--------clouds--------*/
+body {
+    overflow-x: hidden;
+}
+
+@keyframes figure8 {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(40px);
+    }
+}
+
+.cloud-animation {    
+    top: 69%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    animation: figure8 10s infinite;
+    animation: figure8 10s infinite;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cloud,
+.cloud-two,
+.cloud-three,
+.cloud-four,
+.cloud-mass,
+.cloud-mass-two {
+    animation: figure8 10s infinite;
+}
+
+.cloud,
+.cloud-two,
+.cloud-three,
+.cloud-four {
+    animation: figure8 10s infinite;
+    background-image: url(../img/cloud.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    height: 90px;
+    width: 100%;
+    background-position: center center;
+    position: absolute;
+}
+
+.cloud-mass,
+.cloud-mass-two {
+    animation: figure8 10s infinite;
+    background-image: url(../img/cloud-mass.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 13px;
+    height: 110px;
+    width: 100%;
+    background-position: center center;
+    position: absolute;
+}
+
+.cloud-mass {
+    top: 68%;
+    left: -40%;
+    animation: figure8 12.5s infinite;
+    height: 110px;
+    width: 100%;
+}
+
+.cloud-mass-two {
+    top: 68%;
+    left: 37%;
+    animation: figure8 12.75s infinite;
+    height: 110px;
+    width: 100%;
+}
+
+.cloud {
+    top: 70%;
+    left: 22%;
+    animation: figure8 15s infinite;
+}
+
+.cloud-two {
+    top: 70%;
+    left: -22%;
+    animation: figure8 15s infinite;
+}
+
+.cloud-three {
+    top: 68%;
+    left: -15%;
+    animation: figure8 12s infinite;
+}
+
+.cloud-four {
+    top: 69%;
+    left: 15%;
+    animation: figure8 12s infinite;
+}
+/*--------end of clouds---------*/
+
 /*--------products--------*/
 
 #products {
@@ -242,7 +346,7 @@ h3 {
 }
 
 .box:hover h3 {
-    color: var(--col-main-blue);
+    color: var(--col-main-blue );
     transition: color 0.3s ease-in-out;
 }
 
