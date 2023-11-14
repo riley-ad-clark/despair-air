@@ -198,6 +198,16 @@ button.breathe-in:hover {
 /*--------end of hero--------*/
 
 /*--------clouds--------*/
+
+.cloud-container {
+    position: relative;
+    width: 100%;
+    margin-top: -70px;
+    z-index: -1;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out 1.75s forwards; 
+}
+
 body {
     overflow-x: hidden;
 }
@@ -270,7 +280,7 @@ body {
 
 .cloud-mass-two {
     top: 68%;
-    left: 37%;
+    left: 40%;
     animation: figure8 12.75s infinite;
     height: 110px;
     width: 100%;
@@ -278,33 +288,32 @@ body {
 
 .cloud {
     top: 70%;
-    left: 22%;
+    left: 26%;
     animation: figure8 15s infinite;
 }
 
 .cloud-two {
     top: 70%;
-    left: -22%;
+    left: -26%;
     animation: figure8 15s infinite;
 }
 
 .cloud-three {
     top: 68%;
-    left: -15%;
+    left: -20%;
     animation: figure8 12s infinite;
 }
 
 .cloud-four {
     top: 69%;
-    left: 15%;
+    left: 20%;
     animation: figure8 12s infinite;
 }
 /*--------end of clouds---------*/
 
 /*--------products--------*/
-
 #products {
-    margin-top: 125px;
+    margin-top: 200px; /* Adjust the margin to accommodate the cloud section */
     margin-bottom: 125px;
     color: var(--col-black);
 }
