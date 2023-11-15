@@ -129,15 +129,14 @@ i.fa-bars {
 .containerMain {
     width: min(100% - 40px, 1280px);
     margin-inline: auto;
-    /* border: 5px solid #111111; */
     flex-wrap: wrap;
 }
 
 .DAbottle{
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 5%;
     max-width: 33%;
     height: auto;
 }
@@ -146,7 +145,6 @@ i.fa-bars {
     flex: auto;
     height: 700px;
     width: 500px;
-    border: 2px solid #000;
     border-radius: 8px;
 }
 
@@ -155,13 +153,20 @@ i.fa-bars {
 }
 
 .product{
-    margin-right: 20px;
-    background: #0993ca url(../img/hero.jpg) center center / cover no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background: #0993ca url(../img/hero.jpg) center center / cover no-repeat ;
+    box-shadow: rgba(0 0 0 / 0.2) 0px 1px 25px;
 }
 
 .productInfo{
-    background-color: #01a7e840;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: var(--col-light-theme-main);
     align-items: center;
+    box-shadow: rgba(0 0 0 / 0.2) 0px 1px 25px;
 }
 
 .subInfo{
@@ -208,7 +213,7 @@ i.fa-bars {
     text-decoration: none;
     font-size: 16px;
     margin-left: 35%;
-    margin-top: 25px;
+    margin-top: 15px;
     cursor: pointer;
     border-radius: 10px;
 }
