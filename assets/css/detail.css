@@ -1,3 +1,4 @@
+@import "./reset.css";
 /*--------general--------*/
 :root {
     --col-main-blue: #01a6e8;
@@ -154,9 +155,20 @@ i.fa-bars {
 }
 
 .subInfo{
-    margin-top: 30px;
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
+
+.Product-description{
+    font-size: 20px;
+}
+
+.description{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
 /*--------footer--------*/
 
 .container.flex.foot {
