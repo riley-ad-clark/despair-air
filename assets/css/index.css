@@ -318,6 +318,10 @@ body {
     color: var(--col-black);
 }
 
+.product-intro {
+    margin-bottom: 25px;
+}
+
 .product-title {
     margin-top: 25px;
 }
