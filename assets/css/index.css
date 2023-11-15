@@ -48,6 +48,7 @@
 }
 
 .dispair-air-logo {
+    opacity: 0;
     margin-top: 5px;
     background-image: url(../img/logo.png);
     background-size: contain;
@@ -55,6 +56,7 @@
     height: 75px;
     width: 80px;
     visibility: visible;
+    animation: fadeIn 0.5s ease-in-out forwards; 
 }
 
 header {
@@ -70,10 +72,11 @@ header {
 }
 
 nav.head {
+    opacity: 0;
     color: var(--col-white);
     font-size: 0px;
     display: flex;
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 nav.head a {
@@ -124,12 +127,6 @@ nav.head ul li a.c-button {
 nav.head ul li a.c-button:hover {
     background-color: var(--col-main-blue-hover);
     transition: all 0.3s ease-in-out;
-}
-
-i.fa-bars {
-    color: var(--col-black);
-    font-size: 30px;
-    display: none;
 }
 /*--------end of header-------- */
 
@@ -182,7 +179,7 @@ button.breathe-in {
     transition: 0.3s ease-in-out;
     margin-right: 10px;
     color: var(--col-white);
-    animation: fadeIn 0.5s ease-in-out 1.5s forwards;
+    animation: fadeIn 0.5s ease-in-out 1.25s forwards;
 }
 
 button.breathe-in:hover {
@@ -312,8 +309,10 @@ body {
 
 /*--------products--------*/
 #products {
+    opacity: 0;
     padding: 200px 0 125px 0;
     color: var(--col-black);
+    animation: fadeIn 0.5s ease-in-out 2s forwards; 
 }
 
 .products {
@@ -339,6 +338,11 @@ h3 {
     padding: 6px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.one a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .product-flex {
@@ -400,9 +404,10 @@ h3 {
 }
 
 #about {
+    opacity: 0;
     padding: 50px 0 75px 0;
     display: flex;
-
+    animation: fadeIn 0.5s ease-in-out 2s forwards; 
 }
 
 .about-logo {
