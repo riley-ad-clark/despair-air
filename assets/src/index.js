@@ -1,10 +1,5 @@
 'use strict';
 
-const logIn = document.querySelector('.log-in')
-const hamburger = document.querySelector('.fa-bars')
-
-'use strict';
-
 document.addEventListener('DOMContentLoaded', function () {
     const contactButtons = document.querySelectorAll('.c-button');
     const popupOverlay = document.getElementById('popupOverlay');
@@ -17,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const emailInput = form.querySelector('input[name="email"]');
     const messageInput = form.querySelector('textarea[name="message"]');
 
+    // Contact Form Event Listeners
     contactButtons.forEach(button => {
         button.addEventListener('click', togglePopup);
     });
@@ -57,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!emailRegex.test(emailInput.value)) {
             alert('Please enter a valid email');
             return;
-        } 
+        }
         closePopup();
     }
 
@@ -83,8 +79,44 @@ document.addEventListener('DOMContentLoaded', function () {
             icon.classList.remove('valid-icon');
             icon.classList.add('invalid-icon');
         }
-
         icon.style.visibility = 'visible';
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const loginDialog = document.getElementById('login-dialog');
+    const loginLink = document.querySelector('.log-in');
+    const closeBtn = document.querySelector('.close-btn');
+
+    function openLoginDialog() {
+        loginDialog.style.display = 'block';
+    }
+
+    function closeLoginDialog() {
+        loginDialog.style.display = 'none';
+    }
+
+    // Toggle login dialog when clicking "Log In" link
+    loginLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        if (loginDialog.style.display === 'block') {
+            closeLoginDialog();
+         } else {
+            openLoginDialog();
+        }
+    });
+
+    // Close login dialog when clicking close button
+    closeBtn.addEventListener('click', function (event) {
+        event.stopPropagation(); // Stop the event from propagating to the window click event
+        closeLoginDialog();
+    });
+
+    // Close login dialog when clicking outside the dialog
+    window.addEventListener('click', function (event) {
+         // Check if the clicked element is not the login dialog, log-in link, or close button
+        if (!loginDialog.contains(event.target) && event.target !== loginLink) {
+            closeLoginDialog();
+        }
+    });
+});
