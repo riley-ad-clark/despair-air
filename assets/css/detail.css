@@ -121,6 +121,42 @@ i.fa-bars {
 
 /*--------end of header-------- */
 
+.plzwork{
+    box-shadow: rgba(0 0 0 / 0.2) 0px 5px 10px;
+}
+
+.containerMain {
+    width: min(100% - 40px, 1280px);
+    margin-inline: auto;
+    /* border: 5px solid #111111; */
+    flex-wrap: wrap;
+}
+
+.boxes{
+    flex: auto;
+    height: 700px;
+    width: 500px;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.productMain{
+    padding: 75px 0 75px 0;
+}
+
+.product{
+    margin-right: 20px;
+    background: #0993ca url(../img/hero.jpg) center center / cover no-repeat;
+}
+
+.productInfo{
+    background-color: #01a7e840;
+}
+
+.subInfo{
+    margin-top: 30px;
+    
+}
 /*--------footer--------*/
 
 .container.flex.foot {
