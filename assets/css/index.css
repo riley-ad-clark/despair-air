@@ -135,7 +135,7 @@ i.fa-bars {
 .login-dialog {
     width: 400px;
     border-radius: 10px;
-    display: non;
+    display: none;
     position: fixed;
     top: 80px;
     right: 15px;
@@ -357,9 +357,12 @@ body {
 
 /*--------products--------*/
 #products {
-    margin-top: 200px; /* Adjust the margin to accommodate the cloud section */
-    margin-bottom: 125px;
+    padding: 200px 0 125px 0;
     color: var(--col-black);
+}
+
+.products {
+    box-shadow: rgba(0 0 0 / 0.2) 0px 5px 10px;
 }
 
 .product-intro {
@@ -431,6 +434,70 @@ h3 {
     background-image: url(../img/despair-air-10-pack.png);
 }
 /*--------end of products--------*/
+
+/*--------about us---------*/
+
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about {
+    padding: 50px 0 75px 0;
+    display: flex;
+    box-shadow: rgba(0 0 0 / 0.2) 0px 5px 10px;
+}
+
+.about-logo {
+    background-image: url(../img/favicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    height: 500px;
+    width: 75%;
+    background-position: center center;
+}
+
+.about-info {
+   width: 50%;
+}
+
+div.conglomerate {
+    margin-top: 150px;
+    text-align: left;
+    margin-right: 30px;
+}
+
+div.da-desc {
+    margin-top: 20px;
+    width: 400px;
+    text-align: left
+}
+
+div.more {
+    margin: 20px 0px 150px 0px;
+    text-align: center;
+    width: 390px;
+    font-weight: 600;
+}
+
+button.click-here {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--col-main-blue);
+    color: var(--col-white);
+    transition: all 0.3s ease-in-out;
+}
+
+button.click-here:hover {
+    background-color: var(--col-main-blue-hover);
+    transition: all 0.3s ease-in-out;
+}
+
+/*--------end of about us--------*/
 
 /*--------footer--------*/
 
