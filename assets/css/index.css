@@ -132,6 +132,50 @@ i.fa-bars {
     display: none;
 }
 
+.login-dialog {
+    width: 400px;
+    border-radius: 10px;
+    display: non;
+    position: fixed;
+    top: 80px;
+    right: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.login-dialog label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-dialog input {
+    border-radius: 10px;
+    background-color: var(--col-light-theme-alt);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.login-dialog button {
+    border-radius: 10px;
+    background-color: var(--col-main-blue);
+    color: #fff;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 /*--------end of header-------- */
 
 /*--------hero--------*/
