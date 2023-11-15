@@ -18,32 +18,22 @@
     </head>
     <body>
     <!-- --------------header---------------->
-        <header>
-            <div class="container flex head">
-                <div class="dispair-air-logo"></div>
-                <div>
-                    <nav class="head">
-                        <ul>
-                            <li><a href="#products">products</a></li>
-                            <li><a href="#about">about us</a></li>
-                            <li><a class="log-in">log in</a></li>
-                            <li><a class="c-button">contact</a></li>
-                        </ul>
-                        <i class="fa-solid fa-bars"></i>
-                    </nav>
-                </div>
+    <header>
+        <div class="container flex head">
+            <div class="dispair-air-logo"></div>
+            <div>
+                <nav class="head">
+                    <ul>
+                        <li><a href="#products">products</a></li>
+                        <li><a href="#about">about us</a></li>
+                        <li><a class="log-in">log in</a></li>
+                        <li><a class="c-button">contact</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
+                </nav>
             </div>
-            <div id="login-dialog" class="login-dialog">
-                <span class="close-btn">&times;</span>
-                <form id="login-form">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    <button type="submit">Login</button>
-                </form>
-            </div>
-        </header>
+        </div>
+    </header>
     <!----------------end of header---------------->
 
     <!----------------hero---------------->
@@ -155,29 +145,44 @@
 <!----------------end of footer---------------->
 
 <!--------contact form-------->
-<div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup-overlay" id="popupOverlay"></div>
 
-<div class="popup-form" id="popupForm">
-    <span class="close-btn" onclick="closePopup()">x</span>
-    <h2>Contact Form</h2>
-    <form>
-        <p class="form-p">fields marked with * are required</p>
-        <label for="name">Name*:</label>
-        <div class="input-wrapper">
-            <input type="text" id="name" name="name" required oninput="validateInput(this)">
-            <div class="icon" id="nameIcon"></div>
+        <div class="popup-form" id="popupForm">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Contact Form</h2>
+            <form>
+                <p class="form-p">fields marked with * are required</p>
+                <label for="name">Name*:</label>
+                <div class="input-wrapper">
+                    <input type="text" id="name" name="name" required oninput="validateInput(this)">
+                    <div class="icon" id="nameIcon"></div>
+                </div>
+                <label for="email">Email*:</label>
+                <div class="input-wrapper">
+                    <input type="email" id="email" name="email" required oninput="validateInput(this)">
+                    <div class="icon" id="emailIcon"></div>
+                </div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
         </div>
-        <label for="email">Email*:</label>
-        <div class="input-wrapper">
-            <input type="email" id="email" name="email" required oninput="validateInput(this)">
-            <div class="icon" id="emailIcon"></div>
-        </div>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="button" onclick="submitForm()">Submit</button>
-    </form>
-</div>
 <!--------end of contact form-------->
 
+<!--------log in form-------->
+        <section class="container">
+            <div id="login-dialog" class="login-dialog">
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+<!--------end of log in form-------->
     </body>
 </html>

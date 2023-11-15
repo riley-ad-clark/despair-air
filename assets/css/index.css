@@ -131,51 +131,6 @@ i.fa-bars {
     font-size: 30px;
     display: none;
 }
-
-.login-dialog {
-    width: 400px;
-    border-radius: 10px;
-    display: none;
-    position: fixed;
-    top: 80px;
-    right: 15px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.login-dialog label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.login-dialog input {
-    border-radius: 10px;
-    background-color: var(--col-light-theme-alt);
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
-
-.login-dialog button {
-    border-radius: 10px;
-    background-color: var(--col-main-blue);
-    color: #fff;
-    padding: 8px 20px 8px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
 /*--------end of header-------- */
 
 /*--------hero--------*/
@@ -394,8 +349,8 @@ h3 {
 
 .box {
     margin-top: 25px;
-    width: (275px);
-    height: (400px);
+    width: 275px;
+    height: 400px;
     background-color: var(--col-light-theme);
     border-radius: 5px;
     flex: 1;
@@ -463,12 +418,12 @@ h3 {
 
 
 .about-info {
-   width: 50%;
+   width: 90%;
 }
 
 div.conglomerate {
     margin-top: 150px;
-    text-align: left;
+    text-align: center;
     margin-right: 30px;
 }
 
@@ -585,7 +540,7 @@ nav.foot a i:hover {
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    color: #000;
+    color: var(--col-black);
     border: 1px solid var(--col-light-grey);
     border-radius: 10px;
 }
@@ -661,8 +616,54 @@ nav.foot a i:hover {
     background-image: url('../img/x.png');
 }
 
-
 /*--------end of contact form--------*/
+
+/* --------login form-------- */
+
+.login-dialog {
+    display: none;
+    position: fixed;
+    top: 80px; 
+    right: 20px; 
+    padding: 20px;
+    width: 300px;
+    background-color: var(--col-light-theme-main);
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.login-dialog label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-dialog input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid var(--col-light-grey);
+    border-radius: 10px;
+}
+
+.login-dialog button {
+    background-color: var(--col-main-blue);
+    color: var(--col-white);
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* --------end of login form-------- */
+
 
 @media screen and (max-width: 1200px) {
     
@@ -692,8 +693,8 @@ nav.foot a i:hover {
     }
 
     .box {
-        width: (275px);
-        height: (387px);
+        width: 275px;
+        height: 387px;
     }
 
     a,
@@ -733,6 +734,11 @@ nav.foot a i:hover {
         font-size: 20px;
     }
 
+    .box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 910px) {
@@ -755,12 +761,12 @@ nav.foot a i:hover {
     }
 
     section#about {
-        height: 1000px
+        height: 900px
     }
 
     .about-logo {
-        margin-top: 300px;
-        height: 250px;
+        margin-top: 200px;
+        height: 375px;
     }
 
     div.conglomerate {
@@ -783,6 +789,19 @@ nav.foot a i:hover {
         margin-bottom: 20px;
     }
 
+    .cloud,
+    .cloud-two {
+        visibility: hidden;
+    }
+
+    .cloud-three {
+        left: -13%;
+    }
+
+    .cloud-four {
+        left: 13%;
+    }
+
     .product-one,
     .product-two,
     .product-three {
@@ -795,22 +814,17 @@ nav.foot a i:hover {
     }
 
     section#about {
-        height: 680px;
+        height: 900px
+    }
+
+    .about-logo {
+        margin-top: 200px;
+        height: 375px;
     }
 
     .product-intro {
         text-align: center;
-    }
-    
-    i.fa-bars {
-        display: inline;
-        line-height: 70px;
-    }   
-
-    nav ul li a {
-        max-width: 0px;
-        visibility: hidden;
-    }
+    }  
 
     h1 {
         font-size: 25px;
@@ -847,14 +861,25 @@ nav.foot a i:hover {
         line-height: 60px;
     }
 
+    div.conglomerate {
+        font-size: 1px
+    }
+
     .about-logo {
         margin-top: 150px;
         width: 350px;
         height: 225px;
     }
 
-    div.we-are-astro {
-        margin-top: 40px;
+    a,
+    nav.head ul li a {
+        font-size: 12px ;
+    }
+
+    nav.head ul li a.c-button,
+    button.breathe-in {
+        padding: 6px 5px 6px 5px;
+        width: 75px;
     }
 
     .box {
@@ -873,6 +898,7 @@ nav.foot a i:hover {
     .about-logo {
         width: 100%;
         margin-top: 400px;
+        height: 300px;
     }
 
     .two-columns {
@@ -884,16 +910,20 @@ nav.foot a i:hover {
         width: 100%;
     }
 
+    section#about {
+        height: 700px
+    }
+
+    footer {
+        margin-top: 200px;
+    }
+
     .click-here {
         margin: 10px 0 40px 0;
     }
 
     #about {
         height: 10px;
-    }
-
-    footer {
-        margin-top: 200px;
     }
 
     .cloud,
