@@ -394,8 +394,8 @@ h3 {
 
 .box {
     margin-top: 25px;
-    width: max(275px);
-    height: max(400px);
+    width: (275px);
+    height: (400px);
     background-color: var(--col-light-theme);
     border-radius: 5px;
     flex: 1;
@@ -447,10 +447,11 @@ h3 {
 #about {
     padding: 50px 0 75px 0;
     display: flex;
-    box-shadow: rgba(0 0 0 / 0.2) 0px 5px 10px;
+
 }
 
 .about-logo {
+    margin-top: 20px;
     background-image: url(../img/favicon.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -459,6 +460,7 @@ h3 {
     width: 75%;
     background-position: center center;
 }
+
 
 .about-info {
    width: 50%;
@@ -472,14 +474,14 @@ div.conglomerate {
 
 div.da-desc {
     margin-top: 20px;
-    width: 400px;
+    width: 100%;
     text-align: left
 }
 
 div.more {
     margin: 20px 0px 150px 0px;
     text-align: center;
-    width: 390px;
+    width: 100%;
     font-weight: 600;
 }
 
@@ -506,6 +508,7 @@ button.click-here:hover {
 }
 
 footer {
+    margin-top: 0px;
     background-color: var(--col-light-theme-main);
     color: var(--col-white);
     height: 80px;
@@ -536,3 +539,254 @@ nav.foot a i:hover {
 }
 
 /*--------end of footer--------*/
+
+@media screen and (max-width: 1200px) {
+    
+    header {
+        height: 68px;
+    }
+
+    .head h2 {
+        font-size: 24px;
+        line-height: 68px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .box {
+        width: (275px);
+        height: (387px);
+    }
+
+    a,
+    nav.head ul li a {
+        font-size: 14px ;
+    }
+
+    p,
+    .da-desc {
+        font-size: 14px;
+    }
+
+    div.box {
+        font-size: 15px;
+    }
+
+    button {
+        font-weight: 400;
+    }
+
+    nav.foot a i {
+        font-size: 24px;
+    }
+
+    div.copyright p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+
+    .box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .product-one,
+    .product-two,
+    .product-three {
+        height: 150px;
+    }
+
+    .three-columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#about {
+        height: 1000px
+    }
+
+    .about-logo {
+        margin-top: 300px;
+        height: 250px;
+    }
+
+    div.conglomerate {
+        margin-top: 40px;
+    }
+
+    .two-columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .box {
+        width: 100%;
+        
+        margin-bottom: 20px;
+    }
+
+    .product-one,
+    .product-two,
+    .product-three {
+        height: 150px;
+    }
+
+    .three-columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#about {
+        height: 680px;
+    }
+
+    .product-intro {
+        text-align: center;
+    }
+    
+    i.fa-bars {
+        display: inline;
+        line-height: 70px;
+    }   
+
+    nav ul li a {
+        max-width: 0px;
+        visibility: hidden;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2,
+    h4 {
+        font-size: 18px;
+    }
+
+    .box {
+        width: 230px;
+        height: 425px;
+    }
+
+    footer {
+        margin-top: 125px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    header {
+        height: 70px;
+    }
+
+    i.fa-bars {
+        line-height: 60px;
+        font-size: 25px;
+    }
+
+    .head h2 {
+        font-size: 22px;
+        line-height: 60px;
+    }
+
+    .about-logo {
+        margin-top: 150px;
+        width: 350px;
+        height: 225px;
+    }
+
+    div.we-are-astro {
+        margin-top: 40px;
+    }
+
+    .box {
+        width: 100%;
+        height: 380px;
+    }
+
+    nav.foot a i {
+        font-size: 20px;
+    }
+
+    div.copyright p {
+        font-size: 12px;
+    }
+
+    .about-logo {
+        width: 100%;
+        margin-top: 400px;
+    }
+
+    .two-columns {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    div.da-desc {
+        width: 100%;
+    }
+
+    .click-here {
+        margin: 10px 0 40px 0;
+    }
+
+    #about {
+        height: 10px;
+    }
+
+    footer {
+        margin-top: 200px;
+    }
+
+    .cloud,
+    .cloud-two,
+    .cloud-three,
+    .cloud-four {
+        visibility: hidden;
+    }
+
+    .cloud-mass {
+        left: -60%;
+        animation: figure8 12s infinite;
+    }
+
+    .cloud-mass-two {
+        left: 60%;
+        animation: figure8 14s infinite;
+    }
+    
+}
