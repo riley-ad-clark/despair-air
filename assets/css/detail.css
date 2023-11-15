@@ -223,6 +223,11 @@ i.fa-bars {
 
 /*--------text--------*/
 
+.pageTitle{
+    text-align: center;
+    padding-top: 20px;
+}
+
 .button1{
     font-size: 25px;
     font-weight: 400;
