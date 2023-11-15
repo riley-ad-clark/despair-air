@@ -632,6 +632,36 @@ nav.foot a i:hover {
     cursor: pointer;
 }
 
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-wrapper input {
+    padding-right: 30px;
+}
+
+.icon {
+    position: absolute;
+    top: 40%;
+    right: 8px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    visibility: hidden;
+}
+
+.valid-icon {
+    background-image: url('../img/check-mark.png');
+}
+
+.invalid-icon {
+    background-image: url('../img/x.png');
+}
+
+
 /*--------end of contact form--------*/
 
 @media screen and (max-width: 1200px) {
