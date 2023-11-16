@@ -154,10 +154,12 @@ nav.head ul li a.c-button:hover {
     height: 700px;
     width: 500px;
     border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
 }
 
 .productMain{
-    padding: 75px 0 75px 0;
+    padding: 10px 0 75px 0;
 }
 
 .product{
@@ -197,7 +199,6 @@ nav.head ul li a.c-button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 35%;
     margin-top: 65px;
 }
 
@@ -208,7 +209,7 @@ nav.head ul li a.c-button:hover {
     height: 50px;
     display:inline-block;
     cursor: pointer;
-    background-color: #054c68;
+    background-color: var(--col-main-orange);
     border-radius: 10px;
 }
 
@@ -220,7 +221,6 @@ nav.head ul li a.c-button:hover {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin-left: 35%;
     margin-top: 15px;
     cursor: pointer;
     border-radius: 10px;
@@ -228,6 +228,7 @@ nav.head ul li a.c-button:hover {
 
 .cart{
     background-color: var(--col-main-blue);
+    color: var(--col-white);
 }
 
 .cart:hover{
@@ -236,19 +237,24 @@ nav.head ul li a.c-button:hover {
 }
 
 .buy{
-    background-color: var(--col-main-orange);
+    background-color: #054c68;
+    color: var(--col-white);
 }
 
 .buy:hover{
-    background-color: #e39509;
+    background-color: #065a7b;
     transition: all 0.3s ease-in-out;
 }
 
 /*--------text--------*/
 
 .pageTitle{
+    opacity: 0;
+    color: var(--col-black);
     text-align: center;
-    padding-top: 20px;
+    font-size: 35px;
+    padding-top: 30px;
+    animation: fadeIn 0.75s ease-in-out 0.25s forwards;
 }
 
 .button1{
@@ -492,3 +498,25 @@ nav.foot a i:hover {
     cursor: pointer;
 }
 /* --------end of login form-------- */
+
+/*--------screen size-------- */
+
+@media screen and (max-width: 1200px) {
+    .DAbottle {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    h1.pageTitle{
+        font-size: 25px;
+    }
+
+    .DAbottle {
+        max-width: 150px;
+    }
+
+    .product{
+        max-height: 520px;
+    }
+}
