@@ -887,6 +887,11 @@ nav.foot a i:hover {
         width: 75px;
     }
 
+    button.breathe-in:hover {
+        width: 75px;
+        background-color: var(--col-main-blue-hover);
+    }
+
     .box {
         width: 100%;
         height: 380px;
