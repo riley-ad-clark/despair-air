@@ -1,3 +1,4 @@
+@import "./reset.css";
 /*--------general--------*/
 :root {
     --col-main-blue: #01a6e8;
@@ -120,6 +121,162 @@ i.fa-bars {
 }
 
 /*--------end of header-------- */
+
+.productTop{
+    box-shadow: rgba(0 0 0 / 0.2) 0px 5px 10px;
+}
+
+.containerMain {
+    width: min(100% - 40px, 1280px);
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+
+.DAbottle{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    max-width: 33%;
+    height: auto;
+}
+
+.boxes{
+    flex: auto;
+    height: 700px;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.productMain{
+    padding: 75px 0 75px 0;
+}
+
+.product{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background: #0993ca url(../img/hero.jpg) center center / cover no-repeat ;
+    box-shadow: rgba(0 0 0 / 0.2) 0px 1px 25px;
+}
+
+.productInfo{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: var(--col-light-theme-main);
+    align-items: center;
+    box-shadow: rgba(0 0 0 / 0.2) 0px 1px 25px;
+}
+
+.subInfo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.amount{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    line-height: 50px;
+    text-align: center;
+}
+
+.bottles {
+    height: 50px;
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 65px;
+}
+
+/*--------button-------*/
+
+.button1 {
+    width: 50px;
+    height: 50px;
+    display:inline-block;
+    cursor: pointer;
+    background-color: #054c68;
+    border-radius: 10px;
+}
+
+.button {
+    width: 175px;
+    height: 50px;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 35%;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cart{
+    background-color: var(--col-main-blue);
+}
+
+.cart:hover{
+    background-color: var(--col-main-blue-hover);
+    transition: all 0.3s ease-in-out;
+}
+
+.buy{
+    background-color: var(--col-main-orange);
+}
+
+.buy:hover{
+    background-color: #e39509;
+    transition: all 0.3s ease-in-out;
+}
+
+/*--------text--------*/
+
+.pageTitle{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.button1{
+    font-size: 25px;
+    font-weight: 400;
+    color: #edeaea;
+    text-align: center;
+}
+
+.proInfo{
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.shipping{
+    margin-left: 25px;
+    font-size: 10px;
+}
+
+.proDscript{
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 30px;
+}
+
+.Product-description{
+    font-size: 20px;
+}
+
+.description{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
 
 /*--------footer--------*/
 
