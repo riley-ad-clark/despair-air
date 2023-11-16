@@ -10,27 +10,23 @@
         <link rel="stylesheet" href="./assets/css/detail.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/style/reset.css" type="text/css" media="all">
         <script src="./assets/src/detail.js" defer></script>
-        <title>Products</title>
+        <title>Dispair Air</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <!-- --------------header---------------->
         <header>
             <div class="container flex head">
-                <div>
-                    <img class="dispair-logo" src="./assets/img/logo.png" alt="dispair air logo">
-                </div>
+                <a href="index.html"><div class="dispair-air-logo"></div></a>
                 <div>
                     <nav class="head">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="#Login">Log in</a></li>
+                            <li><a href="index.html">home</a></li>
+                            <li><a class="log-in">log in</a></li>
                             <li><a class="c-button">contact</a></li>
                         </ul>
-                        <i class="fa-solid fa-bars"></i>
                     </nav>
                 </div>
             </div>
@@ -89,7 +85,7 @@
 
             </div>
         </section>
-        <!----------------footer---------------->
+<!----------------footer---------------->
         <footer>
             <div class="container flex foot">
                 <nav class="foot">
@@ -105,6 +101,46 @@
                 </div>
             </div>
         </footer>
-        <!----------------end of footer---------------->
+<!----------------end of footer---------------->
+<!--------contact form-------->
+        <div class="popup-overlay" id="popupOverlay"></div>
+
+        <div class="popup-form" id="popupForm">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Contact Form</h2>
+            <form>
+                <p class="form-p">fields marked with * are required</p>
+                <label for="name">Name*:</label>
+                <div class="input-wrapper">
+                    <input type="text" id="name" name="name" required oninput="validateInput(this)">
+                    <div class="icon" id="nameIcon"></div>
+                </div>
+                <label for="email">Email*:</label>
+                <div class="input-wrapper">
+                    <input type="email" id="email" name="email" required oninput="validateInput(this)">
+                    <div class="icon" id="emailIcon"></div>
+                </div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+<!--------end of contact form-------->
+
+<!--------log in form-------->
+        <section class="container">
+            <div id="login-dialog" class="login-dialog">
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+<!--------end of log in form-------->
     </body>
 </html>
