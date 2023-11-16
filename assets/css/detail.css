@@ -222,8 +222,18 @@ i.fa-bars {
     background-color: var(--col-main-blue);
 }
 
+.cart:hover{
+    background-color: var(--col-main-blue-hover);
+    transition: all 0.3s ease-in-out;
+}
+
 .buy{
     background-color: var(--col-main-orange);
+}
+
+.buy:hover{
+    background-color: #e39509;
+    transition: all 0.3s ease-in-out;
 }
 
 /*--------text--------*/
